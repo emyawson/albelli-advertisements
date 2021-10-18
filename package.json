@@ -2,6 +2,10 @@
   "name": "albelli-advertisements",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "^14.0.0",
+    "npm": "^7.0.0"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",
     "@testing-library/jest-dom": "^4.2.4",
