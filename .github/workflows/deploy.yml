@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: Checkout code
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: Setup Nodejs ${{ matrix.node-version }}
         uses: actions/setup-node@v1
       - name: Install Packages
@@ -31,7 +31,7 @@ jobs:
       - name: Run Build
         run: yarn build
       - name: Deploy to Dev
-      - uses: akhileshns/heroku-deploy@v3.11.10 # This is the action
+        uses: akhileshns/heroku-deploy@v3.11.10 # This is the action
         with:
           node-version: ${{ matrix.node-version }}
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
