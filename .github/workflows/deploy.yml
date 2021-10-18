@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "compensation-frontend" #Must be unique in Heroku
+          heroku_app_name: "albelli-front" #Must be unique in Heroku
           heroku_email: "sixtus2000gh@yahoo.co.uk"
           
       - name: Deloy to Prod
